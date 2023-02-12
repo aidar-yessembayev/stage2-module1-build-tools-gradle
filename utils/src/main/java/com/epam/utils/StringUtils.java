@@ -15,6 +15,12 @@ public class StringUtils {
             }
 
         } catch(NumberFormatException e) {
+            float number_2 = Float.parseFloat(str);
+
+            if (number_2 > 0.0) {
+                return true;
+            }
+
             return false;
 
         } catch(NullPointerException e) {
